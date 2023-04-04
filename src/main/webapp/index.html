@@ -1,29 +1,54 @@
-from PIL import Image, ImageDraw, ImageFont
-import secrets
-
-background_image = Image.open("C:\\Users\\hp\\OneDrive\\Desktop\\certificate_program\\Certificate_Template.png")
-
-certificate = Image.new("RGBA", background_image.size, (680, 1280, 680, 1280))
-
-certificate.paste(background_image, (0, 0))
-
-draw = ImageDraw.Draw(certificate)
-
-font_name = ImageFont.truetype('arial.ttf', size=30)
-name = str(input('Enter the name (ex:- all letter are in capital):'))
-draw.text((670,310), f' {name}', fill='white', font=font_name, anchor='ms')
-
-font_course = ImageFont.truetype('arial.ttf', size=24)
-course = str(input('Enter the course name (ex:- all letter are in capital):'))
-draw.text((680,440), f'{course}', fill='green', font=font_course, anchor='ms')
-
-font_Date = ImageFont.truetype('arial.ttf', size=20)
-Date = str(input('Enter the Date (ex:- March 21,2023):'))
-draw.text((640,555), f'{Date}', fill='white', font=font_Date, anchor='ms')
-
-font_code = ImageFont.truetype('arial.ttf', size=20)
-code = secrets.token_hex(5).upper()
-draw.text((300,555), f'{code}', fill='white', font=font_code, anchor='ms')
+VINNAG
+Welcome to LEARNING MANAGEMENT SYSTEM
+2 homepage by using the html
+Welcome to Learning Management System Home Page
+Ready To Learn!
 
 
-certificate.save('C:\\Users\\hp\\OneDrive\\Desktop\\certificate_program\\generated_certificated_data\\Certificate_{}.png'.format(name))
+VINNAG
+
+3. homepage by using the html
+VINNAG LMS Home About Contact
+HOME
+Learn More
+Projects
+
+I have worked on many projects and I am very proud of them. I am a very good developer and I am always looking for new projects.
+
+Skills
+
+I have a lot of skills and I am very good at them. I am very good at programming and I am always looking for new skills.
+
+Software
+
+I have a lot of software skills and I am very good at them. I am very good at networking and I am always looking for new software skills.
+
+About Me
+I am a web developer and I love to create websites. and I am always looking for new projects.
+
+© 2023 Developer
+More Info Home About Contact
+Social Links
+4. integration of the ms teams and the google meet
+INTEGRATION OF GOOGLE MEETS
+ 
+5. sliding box by using the html
+Sliding bar for the LMS
+
+
+
+
+
+
+
+
+
+6. image slider by using the html
+
+
+
+
+
+
+
+CSS file of the image slider bar *{ margin: 0; padding:0; box-sizing: border-box; } .container{ width: 70%; height: 500px; background:#222; margin: auto; margin-top: 100px; display: flex; align-items: center; justify-content: center; } .swiper{ width: 50%; height: 50vh; display: flex; align-items: center; justify-content: center; } .swiper-slide img{ width: 1000px;; }
